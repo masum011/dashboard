@@ -1,0 +1,81 @@
+#root--layout{
+    display: flex;
+}
+.logo--contaner {
+    position: relative;
+  }
+  .logo--div {
+    text-align: center;
+    padding: 3.5rem;
+  }
+  #logo {
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 0.8rem;
+  }
+  .logo--div > p:last-child {
+    margin: 0;
+    font-size: 14px;
+  }
+  #toggleIcon{
+      position: absolute;
+      right: 0;
+      bottom: -1.5rem;
+      background-color: black;
+      width: 30px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      z-index: 2;
+  }
+
+/* header */
+.page--contaner{
+    width: 100%;
+    padding: 1rem;
+}
+.page--contaner>main{
+    padding-top: 4rem;
+}
+.header--div{
+    padding-inline: 20%;
+    /* width: 100%; */
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.input--filed>input{
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    width: 250px;
+    outline: none;
+}
+.icon--div{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+.user--avtar>img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.icon--div>span{
+    position: absolute;
+    top: -2px;
+    left: 1rem;
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 20px;
+}

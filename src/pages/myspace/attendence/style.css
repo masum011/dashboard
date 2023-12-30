@@ -1,0 +1,54 @@
+.attendence {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rem;
+  padding-left: 1rem;
+  padding: 1rem;
+}
+.attendence--log {
+  display: flex;
+}
+.attendence--log > h5 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+.attendence--calendar {
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-block: 1rem;
+  padding: 1rem;
+}
+.active{
+    background-color: orange;
+    color: white;
+}
+.attendence--inner{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* flex-direction: column; */
+}
+.inner>div{
+    display: flex;
+    flex-direction: column;
+}
+.ps-active{
+    background-color: blue;
+    color: white;
+}
+.ps-active:hover{
+    background-color: blue !important;
+    color: white;
+
+}

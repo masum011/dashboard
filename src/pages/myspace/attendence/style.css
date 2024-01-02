@@ -15,40 +15,116 @@
   padding: 0.5rem 1rem;
   border: 1px solid black;
   cursor: pointer;
-
+}
+h4>span{
+  color: orange;
 }
 .attendence--calendar {
   border-radius: 5px;
   border: 1px solid gray;
   margin-block: 1rem;
-  padding: 1rem;
 }
-.active{
-    background-color: orange;
-    color: white;
+#selectItems{
+  background-color: transparent;
+  color: inherit;
+  border: none;
 }
-.attendence--inner{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    text-align: center;
+.active {
+  background-color: orange;
+  color: white;
 }
-.inner{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    /* flex-direction: column; */
+.attendence--inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
 }
-.inner>div{
-    display: flex;
-    flex-direction: column;
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.ps-active{
-    background-color: blue;
-    color: white;
+.inner > div {
+  display: flex;
+  flex-direction: column;
 }
-.ps-active:hover{
-    background-color: blue !important;
-    color: white;
+.Timings,.action>p:first-child{
+  text-align: center;
+}
+.Timings>p:nth-child(2)>button{
+  background-color: transparent;
+  border: 1px solid lightgray;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: white;
+}
+.Timings>p:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  /* gap: .3rem; */
+}
 
+.action--div{
+  display: flex;
+}
+.action--btn{
+  margin: .3rem;
+}
+.action--btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+}
+.action--btn>button{
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: .5rem 1rem;
+  width: 200px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.table--btn--info>button{
+  background-color: inherit;
+  border: 1px solid lightgray;
+  color: inherit;
+  padding: .2rem;
+}
+.table--btn--info>button:first-child{
+  background-color: orange;
+}
+#table--header{
+  margin-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .3rem;
+}
+.table--btn>button{
+ background-color: inherit;
+ color: inherit;
+ padding: .8rem 1.2rem;
+ border: 1px solid lightgray;
+}
+.table--btn>button:first-child{
+  background-color: orange;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody{
+  border-radius: 10px;
+  border-style: hidden;
+}
+td, th {
+  border: 1px solid lightgray;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #00000054;
 }

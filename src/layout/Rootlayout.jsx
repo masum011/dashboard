@@ -6,6 +6,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
 import { CgDarkMode } from "react-icons/cg";
+import { CiSearch } from "react-icons/ci";
 
 import { MdEmail } from "react-icons/md";
 import "./style.css";
@@ -14,7 +15,7 @@ export default function Rootlayout() {
   const location = useLocation();
   return (
     <div id="root--layout">
-      <Sidebar style={{ height: "100vh" }}>
+      <Sidebar id="pro-sidebar">
         <Menu>
           <div className="logo--contaner">
             <div className="logo--div">
@@ -52,7 +53,10 @@ export default function Rootlayout() {
         <div className="header--div">
           <header>
             <div className="input--filed">
-              <input type="text" placeholder="Search" />
+              <input type="text" placeholder="Search..." />
+              
+                <CiSearch size={"20px"} id="search-icon"/>
+             
             </div>
             <div className="icon--div">
               <span></span>
